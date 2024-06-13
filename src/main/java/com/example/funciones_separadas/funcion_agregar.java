@@ -1,11 +1,11 @@
-package com.example;
-
+package com.example.funciones_separadas;
+//package com.example;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class ProductManager {
+public class funcion_agregar {
     private static final String url = "jdbc:mysql://localhost:3306/base_de_java_mañana";
     private static final String user = "root";
     private static final String password = "";
@@ -29,6 +29,8 @@ public class ProductManager {
             System.out.println("Error al agregar el producto: " + e.getMessage());
         }
     }
+
+
 
     public static void main(String[] args) {
         agregarProducto("Producto de ejemplo", 10.99, "Descripción del producto de ejemplo");
